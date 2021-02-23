@@ -1,8 +1,6 @@
 const fs = require("fs");
 
 module.exports = (app) => {
-  // found at https://www.codegrepper.com/code-examples/javascript/javascript+generate+unique+id
-
   app.get("/api/notes", (req, res) => {
     let data = JSON.parse(fs.readFileSync("./db/db.json"));
     res.send(data);
