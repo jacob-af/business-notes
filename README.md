@@ -30,15 +30,20 @@ This note taker will store user generated notes in a json file using an express.
   - (assets)
     - (css)
     - (js)
-- routes
+- (routes)
   - apiRoutes.js
   - htmlRoutes.js
+- (screenshots)
 
 ## Usage
 
 Deployed project can be found at [business-notes](https://arcane-earth-85867.herokuapp.com/)
 
 After navigating to the application, you will be greeted with a landing page.  Clicking on the link to the notes page will present you with existing notes in the left column, and empty fields to enter new notes on the right.  After entering both a title and text to a note, a save icon will appear allowing the note to be saved.  The new note will appear in the left hand column.  Clicking on a note in the left hand column, the title and text will apear in the right hand column.  When the Write icon is clicked, empty fields for new note title and text appear in the right hand column.
+
+![landing](./screenshots/landing.png)
+![display-note](./screenshots/display-note.png)
+![empty-note](./screenshots/empty-note.png)
 
 ## Contributions
 
