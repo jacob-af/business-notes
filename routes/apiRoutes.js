@@ -34,7 +34,7 @@ module.exports = (app) => {
     let idToRemove = data.findIndex((ele) => ele.id === req.params.id);
     // removes appropriate index
     data.splice(idToRemove, 1);
-
+    //update the db.json with new array
     fs.writeFileSync("./db/db.json", JSON.stringify(data), (err) =>
       err ? console.log(err) : console.log("success")
     );
